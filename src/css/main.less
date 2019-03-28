@@ -1,9 +1,92 @@
+body,html{
+	padding:0;
+	margin:0;
+	height: 100%;
+	width: 100%;
+}
 #code-editor-container{
 	position: relative;
+	height: 100%;
+	font-family: inherit;
 	>.header{
+
+		vertical-align:top;
+	    height: 50px;
+
 		.select-item{
 			display:inline-block;
 			padding: 10px 15px;
+			>select{
+				padding: 5px 10px;
+				border:1px solid #ddd;
+				background:transparent;
+			}
+		}
+
+		#runCodeButton{
+			border: none;	
+			background: #123456;
+			color: #fff;
+			font-weight: bold;
+			float:right;
+			line-height: 50px;
+			height: 50px;
+			padding: 0 15px;
+			font-size: 1.2em;
+			cursor: pointer;
+		}
+	}
+	>#code-area{
+		height: calc(100% - 250px);
+		.CodeMirror{
+			height: 100%;
+		}
+	}
+	#output-area{
+		box-sizing: border-box;	
+		border: 2px solid rgba(0,0,0,0.8);
+	    background: rgba(0,0,0,0.95);	
+		position: relative;
+		height: 195px;
+	    color: #fff;
+	    *{
+			box-sizing: border-box;	
+	    }
+	    padding: 10px 15px;	
+		.output-title{
+			position: relative;
+			font-weight: bold;
+			&:after {
+			    content: '';
+			    position: absolute;
+			    left: -3px; 
+			    bottom: -7px;
+			    height: 2px;
+			    background-color: #fff;
+			    width: 55px;
+			    transition: width .25s;
+			}
+		}
+		#output{
+		    resize: none;
+			width:100%;
+			border: none;
+			padding-top: 10px;
+			background: transparent;
+			max-height: 130px;
+		}
+		.footer{
+			background: rgba(255,255,255,0.1);
+			padding: 3px 15px;
+			position: absolute;
+			bottom: 0px;
+			line-height: 1.5em;
+			left: -10px;
+			text-align: right;
+			width: calc(100% + 10px);
+			span{
+				margin-left: 5px;
+			}
 		}
 	}
 }
