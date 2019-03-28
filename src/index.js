@@ -94,3 +94,21 @@ function selectTheme() {
 	editor.setOption("theme", theme);
 }
 themeInput.onchange = selectTheme;
+
+window.addEventListener('load', function(){
+	axios.get('http://10.5.22.216:4100/meetings/10/code')
+	  .then(function (options) {
+	  	var languageId = document.getElementById('language-select').value;
+        var languageInput = document.getElementById('language-select');
+        var code = editor.getValue();
+        if(languageId !== options.data.language_id){
+            languageInput.value = options.data.language_id;
+        }
+        if(code !== options.data.source_code){
+            editor.setValue(options.data.source_code);
+        }
+	  })
+	  .catch(function (error) {
+	    console.log(error);
+	  });
+},false);
