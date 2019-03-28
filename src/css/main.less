@@ -7,19 +7,20 @@ body,html{
 #code-editor-container{
 	position: relative;
 	height: 100%;
-	font-family: inherit;
+	font-family: monospace;
 	>.header{
 		vertical-align:top;
 	    height: 50px;
 
 		.select-item{
 			display:inline-block;
-			padding: 10px 15px;
+			padding: 10px 0px 10px 10px;
 			>select{
 			    height: 30px;
 				padding: 5px 10px;
 				border:1px solid #ddd;
 				background:transparent;
+				width: 150px;
 			}
 		}
 
@@ -72,16 +73,31 @@ body,html{
 			    width: 55px;
 			    transition: width .25s;
 			}
+			.buttons{
+				display: inline-block;
+			    float: right;
+			    >span{
+			    	cursor: pointer;
+			    }
+			}
 		}
 		#output{
+	    	color: #1aa260;
 		    resize: none;
 			width:100%;
+			font-size: 0.8em;
 			border: none;
-			padding-top: 10px;
+			margin-top: 15px;
 			background: transparent;
-			max-height: 130px;
+			height: 115px;
+			&.error{
+				color: #dd4b39;
+			}
 		}
 		.footer{
+			>div{
+				display: inline-block;
+			}
 			background: rgba(255,255,255,0.1);
 			padding: 3px 15px;
 			position: absolute;
@@ -90,6 +106,13 @@ body,html{
 			left: -10px;
 			text-align: right;
 			width: calc(100% + 10px);
+			.logo{
+				font-weight: bold;
+				color: #00aced;
+				float:left;
+				letter-spacing:0.5px;
+				font-size:1.5em;
+			}
 			span{
 				margin-left: 5px;
 			}

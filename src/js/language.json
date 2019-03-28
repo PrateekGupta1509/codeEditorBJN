@@ -17,62 +17,62 @@
    {  
       "id":4,
       "name":"C (gcc 7.2.0)",
-      "mode":"text/x-csrc"
+      "mode":"clike"
    },
    {  
       "id":5,
       "name":"C (gcc 6.4.0)",
-      "mode":"text/x-csrc"
+      "mode":"clike"
    },
    {  
       "id":6,
       "name":"C (gcc 6.3.0)",
-      "mode":"text/x-csrc"
+      "mode":"clike"
    },
    {  
       "id":7,
       "name":"C (gcc 5.4.0)",
-      "mode":"text/x-csrc"
+      "mode":"clike"
    },
    {  
       "id":8,
       "name":"C (gcc 4.9.4)",
-      "mode":"text/x-csrc"
+      "mode":"clike"
    },
    {  
       "id":9,
       "name":"C (gcc 4.8.5)",
-      "mode":"text/x-csrc"
+      "mode":"clike"
    },
    {  
       "id":10,
       "name":"C++ (g++ 7.2.0)",
-      "mode":"text/x-c++src"
+      "mode":"clike"
    },
    {  
       "id":11,
       "name":"C++ (g++ 6.4.0)",
-      "mode":"text/x-c++src"
+      "mode":"clike"
    },
    {  
       "id":12,
       "name":"C++ (g++ 6.3.0)",
-      "mode":"text/x-c++src"
+      "mode":"clike"
    },
    {  
       "id":13,
       "name":"C++ (g++ 5.4.0)",
-      "mode":"text/x-c++src"
+      "mode":"clike"
    },
    {  
       "id":14,
       "name":"C++ (g++ 4.9.4)",
-      "mode":"text/x-c++src"
+      "mode":"clike"
    },
    {  
       "id":15,
       "name":"C++ (g++ 4.8.5)",
-      "mode":"text/x-c++src"
+      "mode":"clike"
    },
    {  
       "id":16,
@@ -127,27 +127,33 @@
    {  
       "id":26,
       "name":"Java (OpenJDK 9 with Eclipse OpenJ9)",
-      "mode":"text/x-java"
+      "mode":"clike"
    },
    {  
       "id":27,
       "name":"Java (OpenJDK 8)",
-      "mode":"text/x-java"
+      "mode":"clike"
    },
    {  
       "id":28,
       "name":"Java (OpenJDK 7)",
-      "mode":"text/x-java"
+      "mode":"clike"
    },
    {  
       "id":29,
       "name":"JavaScript (nodejs 8.5.0)",
-      "mode":"text/javascript"
+      "mode":{
+         "name": "javascript",
+         "singleLineStringErrors": false
+     }
    },
    {  
       "id":30,
       "name":"JavaScript (nodejs 7.10.1)",
-      "mode":"text/javascript"
+      "mode":{
+         "name": "javascript",
+         "singleLineStringErrors": false
+     }
    },
    {  
       "id":31,
@@ -167,22 +173,38 @@
    {  
       "id":34,
       "name":"Python (3.6.0)",
-      "mode":"text/x-python"
+      "mode":{
+         "name": "python",
+         "version": 3,
+         "singleLineStringErrors": false
+     }
    },
    {  
       "id":35,
       "name":"Python (3.5.3)",
-      "mode":"text/x-python"
+      "mode":{
+         "name": "python",
+         "version": 3,
+         "singleLineStringErrors": false
+     }
    },
    {  
       "id":36,
       "name":"Python (2.7.9)",
-      "mode":"text/x-python"
+      "mode":{
+         "name": "python",
+         "version": 3,
+         "singleLineStringErrors": false
+     }
    },
    {  
       "id":37,
       "name":"Python (2.6.9)",
-      "mode":"text/x-python"
+      "mode":{
+         "name": "python",
+         "version": 3,
+         "singleLineStringErrors": false
+     }
    },
    {  
       "id":38,

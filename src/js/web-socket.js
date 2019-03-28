@@ -99,10 +99,19 @@ module.exports = (eventSocketUrl, meetingId) => {
                     }
                 } 
                 if(options.action == "SHOW_RESULT") {
-                        var resultDiv = document.getElementById('output');
-                        resultDiv.value = options.message;
+                    var resultDiv = document.getElementById('output');
+                    if(options.message.stdout){
+                        resultDiv.classList.remove("error");
+                        resultDiv.innerHTML = "";
+                        resultDiv.innerHTML = options.message.stdout;
+                    }
+                    else{
+                        resultDiv.classList.add("error");
+                        resultDiv.innerHTML = options.message.compile_output + '\n' + options.message.stderr;
+                    }
+                    document.getElementById('editor-time').innerHTML = options.message.time || 'NA ';
+                    document.getElementById('editor-memory').innerHTML = options.message.memory || 'NA ';
                 }
-
             });
     
             client.on('data', (data) => {

@@ -4,9 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>CodeEditor: BJN</title>
 <link rel="stylesheet" href="./css/codemirror.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <script src="./js/codemirror.js"></script>
 <script src="./js/matchbrackets.js"></script>
 <script src="./js/python.js"></script>
+<script src="./mode/javascript/javascript.js"></script>
 </head>
 <body>
 <div id="code-editor-container">
@@ -126,16 +128,28 @@
     <textarea id="code" name="code"></textarea>
   </div>
   <div id="output-area">
-    <div class="output-title">Output</div>
-    <textarea id="output">Error</textarea>
-    <div class="footer">Runtime: <span class="time">100</span>ms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Memory: <span class="memory">0.00023Mb</span></div>
+    <div class="output-title">Output
+        <div class="buttons">
+            <span id="dcb">DOWNLOAD CODE</span>
+        </div>
+    </div>
+    <textarea id="output"></textarea>
+    <div class="footer">
+        <div class="logo">
+            BJN CODE
+        </div>
+        <div>
+            Runtime: <span id="editor-time">0</span>ms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Memory: <span id="editor-memory">0.00</span>Mb
+        </div>
+    </div>
   </div>
 </div>
 
 <script>
 var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
   mode: {
-    name: "python",
+    name: "javascript",
     version: 3,
     singleLineStringErrors: false
   },

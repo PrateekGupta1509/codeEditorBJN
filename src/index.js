@@ -3,7 +3,7 @@ import './theme';
 import ws from './js/web-socket';
 import LanguageObject from './js/language.json';
 import axios from "axios";
-
+import CodeMirror from 'codemirror';
 var meetingid = "10";
 var Client;
 var didIMakeChange = false;
@@ -24,9 +24,26 @@ function debounce(func, wait, immediate) {
 	};
 };
 
+function download(text, filename){
+  var blob = new Blob([text], {type: "text/plain"});
+  var url = window.URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  a.click();
+}
+
+document.getElementById('dcb').onclick = function(){
+	var code = editor.getValue();
+	download(code,'code.txt')
+}
+
 function updateCode(){
 	var options = getValueObject();
 	Client.changeCode(options);
+
+	var val = LanguageObject.find(x => x.id == options.language_id)
+    editor.setOption("mode", val.mode);
 }
 
 
@@ -40,6 +57,7 @@ editor.on("keypress",
 
 var languageInput = document.getElementById('language-select');
 languageInput.onchange = updateCode;
+
 
 
 
