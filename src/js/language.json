@@ -1,0 +1,217 @@
+[  
+   {  
+      "id":1,
+      "name":"Bash (4.4)",
+      "mode": "shell"
+   },
+   {  
+      "id":2,
+      "name":"Bash (4.0)",
+      "mode": "shell"
+   },
+   {  
+      "id":3,
+      "name":"Basic (fbc 1.05.0)",
+      "mode":"text/vbscript"
+   },
+   {  
+      "id":4,
+      "name":"C (gcc 7.2.0)",
+      "mode":"text/x-csrc"
+   },
+   {  
+      "id":5,
+      "name":"C (gcc 6.4.0)",
+      "mode":"text/x-csrc"
+   },
+   {  
+      "id":6,
+      "name":"C (gcc 6.3.0)",
+      "mode":"text/x-csrc"
+   },
+   {  
+      "id":7,
+      "name":"C (gcc 5.4.0)",
+      "mode":"text/x-csrc"
+   },
+   {  
+      "id":8,
+      "name":"C (gcc 4.9.4)",
+      "mode":"text/x-csrc"
+   },
+   {  
+      "id":9,
+      "name":"C (gcc 4.8.5)",
+      "mode":"text/x-csrc"
+   },
+   {  
+      "id":10,
+      "name":"C++ (g++ 7.2.0)",
+      "mode":"text/x-c++src"
+   },
+   {  
+      "id":11,
+      "name":"C++ (g++ 6.4.0)",
+      "mode":"text/x-c++src"
+   },
+   {  
+      "id":12,
+      "name":"C++ (g++ 6.3.0)",
+      "mode":"text/x-c++src"
+   },
+   {  
+      "id":13,
+      "name":"C++ (g++ 5.4.0)",
+      "mode":"text/x-c++src"
+   },
+   {  
+      "id":14,
+      "name":"C++ (g++ 4.9.4)",
+      "mode":"text/x-c++src"
+   },
+   {  
+      "id":15,
+      "name":"C++ (g++ 4.8.5)",
+      "mode":"text/x-c++src"
+   },
+   {  
+      "id":16,
+      "name":"C# (mono 5.4.0.167)",
+      "mode":"text/x-csharp"
+   },
+   {  
+      "id":17,
+      "name":"C# (mono 5.2.0.224)",
+      "mode":"text/x-csharp"
+   },
+   {  
+      "id":18,
+      "name":"Clojure (1.8.0)",
+      "mode":"text/x-clojure"
+   },
+   {  
+      "id":19,
+      "name":"Crystal (0.23.1)",
+      "mode":"text/x-clojure"
+   },
+   {  
+      "id":20,
+      "name":"Elixir (1.5.1)",
+      "mode":"text/x-elixir"
+   },
+   {  
+      "id":21,
+      "name":"Erlang (OTP 20.0)",
+      "mode":"text/x-erlang"
+   },
+   {  
+      "id":22,
+      "name":"Go (1.9)",
+      "mode":"text/x-go"
+   },
+   {  
+      "id":23,
+      "name":"Haskell (ghc 8.2.1)",
+      "mode":"text/x-haskell"
+   },
+   {  
+      "id":24,
+      "name":"Haskell (ghc 8.0.2)",
+      "mode":"text/x-haskell"
+   },
+   {  
+      "id":25,
+      "name":"Insect (5.0.0)",
+      "mode": "text"
+   },
+   {  
+      "id":26,
+      "name":"Java (OpenJDK 9 with Eclipse OpenJ9)",
+      "mode":"text/x-java"
+   },
+   {  
+      "id":27,
+      "name":"Java (OpenJDK 8)",
+      "mode":"text/x-java"
+   },
+   {  
+      "id":28,
+      "name":"Java (OpenJDK 7)",
+      "mode":"text/x-java"
+   },
+   {  
+      "id":29,
+      "name":"JavaScript (nodejs 8.5.0)",
+      "mode":"text/javascript"
+   },
+   {  
+      "id":30,
+      "name":"JavaScript (nodejs 7.10.1)",
+      "mode":"text/javascript"
+   },
+   {  
+      "id":31,
+      "name":"OCaml (4.05.0)",
+      "mode": "text/x-ocaml"
+   },
+   {  
+      "id":32,
+      "name":"Octave (4.2.0)",
+      "mode":"text/x-octave"
+   },
+   {  
+      "id":33,
+      "name":"Pascal (fpc 3.0.0)",
+      "mode":"text/x-pascal"
+   },
+   {  
+      "id":34,
+      "name":"Python (3.6.0)",
+      "mode":"text/x-python"
+   },
+   {  
+      "id":35,
+      "name":"Python (3.5.3)",
+      "mode":"text/x-python"
+   },
+   {  
+      "id":36,
+      "name":"Python (2.7.9)",
+      "mode":"text/x-python"
+   },
+   {  
+      "id":37,
+      "name":"Python (2.6.9)",
+      "mode":"text/x-python"
+   },
+   {  
+      "id":38,
+      "name":"Ruby (2.4.0)",
+      "mode":"text/x-ruby"
+   },
+   {  
+      "id":39,
+      "name":"Ruby (2.3.3)",
+      "mode":"text/x-ruby"
+   },
+   {  
+      "id":40,
+      "name":"Ruby (2.2.6)",
+      "mode":"text/x-ruby"
+   },
+   {  
+      "id":41,
+      "name":"Ruby (2.1.9)",
+      "mode":"text/x-ruby"
+   },
+   {  
+      "id":42,
+      "name":"Rust (1.20.0)",
+      "mode": "text/x-rustsrc"
+   },
+   {  
+      "id":43,
+      "name":"Text (plain text)",
+      "mode":"htmlmixed"
+   }
+]
