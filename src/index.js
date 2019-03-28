@@ -2,6 +2,7 @@ import './css/main.less';
 import './theme';
 import ws from './js/web-socket';
 import LanguageObject from './js/language.json';
+import axios from "axios";
 
 var meetingid = "10";
 var Client;
@@ -46,22 +47,6 @@ ws("10.5.22.216:4100/code-editor", meetingid)
 	.then((client, data, someBlah) => {
 	    Client = client;
 
-
-		if(someBlah) {
-
-			Client.on('a2mevent.notification.message', (data) => {
-                if(data.action == "CHANGE_CODE") {
-		    		changeUIonUpdate(data.message);
-		        }
-		        if(data.action == "SHOW_RESULT") {
-		        	// change result ui block
-		        } 
-
-		    	console.log("receiveCode", data.message);
-            });
-		    
-		}
-
 		Client.changeCode = function(options) {
 		    console.log("changeCode", options);
 		    Client.emit("a2mevent.notification.message", {
@@ -72,9 +57,14 @@ ws("10.5.22.216:4100/code-editor", meetingid)
 		}
 
 		Client.uploadCode = function(options) {
-		    // CALL API
-
 			console.log("uploadCode", options);
+			axios.post('http://10.5.22.216:4100/meetings/10/submission', options)
+			  .then(function (response) {
+			    console.log(response);
+			  })
+			  .catch(function (error) {
+			    console.log(error);
+			  });
 		}
 	})
 	.catch((err) => {
