@@ -85,9 +85,17 @@ module.exports = (eventSocketUrl, meetingId) => {
                 resolve(client);
             });
 
-            client.on('a2mevent.notification.message', (data) => {
-                console.info(`Message from server : ${JSON.stringify(data)}`)
-                resolve(client);
+            client.on('a2mevent.notification.message', (options) => {
+                console.info(`Message from server : ${JSON.stringify(options)}`)
+                var languageId = document.getElementById('language-select').value;
+                var languageInput = document.getElementById('language-select');
+                var code = editor.getValue();
+                if(languageId !== options.language_id){
+                    languageInput.value = options.language_id;
+                }
+                if(code !== options.source_code){
+                    editor.setValue(options.source_code);
+                }
             });
     
             client.on('data', (data) => {

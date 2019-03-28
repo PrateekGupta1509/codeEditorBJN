@@ -3431,9 +3431,9 @@
   'use strict';
   
   module.exports = global.location || {
-    origin: 'http://localhost:4100'
+    origin: 'http://10.5.22.216:4100'
   , protocol: 'http'
-  , host: 'localhost'
+  , host: '10.5.22.216'
   , port: 4100
   , href: 'http://localhost/'
   , hash: ''
